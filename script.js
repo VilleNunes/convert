@@ -37,7 +37,7 @@ form.onsubmit = (event) =>{
 function converterMoeda(amount,preco,symbol){
   try { 
     description.textContent = `${symbol} 1 = ${formatarMoeda(preco)}`
-    let total = amount * preco + "m"
+    let total = amount * preco 
     total = formatarMoeda(total).replace("R$", "")
 
     result.textContent = `${total} reais` ;
